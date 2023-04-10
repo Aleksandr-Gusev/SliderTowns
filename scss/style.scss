@@ -38,8 +38,57 @@ ul, li {
 
 .header{
 	/* background-color: #c4c4c4; */
+	position: relative;
 	width: 100%;
 	height: 100%;
+
+	&__content{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		padding-top: 48px;
+		padding-bottom: 82px;
+
+		&__nav{
+			width: 100%;
+			display: flex;
+			justify-content:space-between;
+		}
+
+	}
+}
+
+.burger{
+	margin-right: 30px;
+	margin-top: auto;
+}
+
+.burger_line{
+	background-color:white;
+	height: 2px;
+	width: 25px;
+	margin-bottom: 4px;
+}
+
+.logo_wrap{
+	margin-left: 30px;
+	width: 110px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav_menu{
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	left: -50px;
 }
 
 .header-slider__item{
@@ -63,6 +112,15 @@ ul, li {
 	background-position: center;  */
 	height: auto;
     vertical-align: middle;
+}
+
+.header__content__title{
+	font-size: 200px;
+	font-weight: 700;
+	background: linear-gradient(30.06deg, #000000 -20.87%, rgba(255,255,255,0) 26.89%), #ffffff;
+	color: transparent;
+	-webkit-background-clip: text;
+  	background-clip: text;
 }
 
 
